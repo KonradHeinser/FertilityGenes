@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--Lower fertility genes-->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+            <GeneDef ParentName="FertilityBase">
+            <defName>ExtremelyLowFertility</defName>
+                <label>extremely low fertility</label>
+                <description>Carriers of this gene have an extremely low chance of becoming pregnant or impregnating others.</description>
+                <iconPath>UI/Icons/Genes/Gene_Fertile</iconPath>
+                <displayOrderInCategory>101</displayOrderInCategory>
+                <statFactors>
+                    <Fertility>0.1</Fertility>
+                </statFactors>
+            </GeneDef>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+            <GeneDef ParentName="FertilityBase">
+            <defName>VeryLowFertility</defName>
+                <label>very low fertility</label>
+                <description>Carriers of this gene have a much lower chance of becoming pregnant or impregnating others.</description>
+                <iconPath>UI/Icons/Genes/Gene_Fertile</iconPath>
+                <displayOrderInCategory>103</displayOrderInCategory>
+                <statFactors>
+                    <Fertility>0.25</Fertility>
+                </statFactors>
+            </GeneDef>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+            <GeneDef ParentName="FertilityBase">
+            <defName>LowFertility</defName>
+                <label>low fertility</label>
+                <description>Carriers of this gene have a lower chance of becoming pregnant or impregnating others.</description>
+                <iconPath>UI/Icons/Genes/Gene_Fertile</iconPath>
+                <displayOrderInCategory>105</displayOrderInCategory>
+                <statFactors>
+                    <Fertility>0.5</Fertility>
+                </statFactors>
+            </GeneDef>
+        </value>
+    </Operation>
+
+    <!--Increase Fertility Genes-->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+            <GeneDef ParentName="FertilityBase">
+            <defName>AboveAverageFertility</defName>
+                <label>above average fertility</label>
+                <description>Carriers of this gene have a slightly higher chance of becoming pregnant or impregnating others.</description>
+                <iconPath>UI/Icons/Genes/Gene_Fertile</iconPath>
+                <displayOrderInCategory>108</displayOrderInCategory>
+                <statFactors>
+                    <Fertility>1.5</Fertility>
+                </statFactors>
+            </GeneDef>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+            <GeneDef ParentName="FertilityBase">
+            <defName>VeryFertile</defName>
+                <label>very fertile</label>
+                <description>Carriers of this gene have a much higher chance of becoming pregnant or impregnating others.</description>
+                <iconPath>UI/Icons/Genes/Gene_Fertile</iconPath>
+                <displayOrderInCategory>120</displayOrderInCategory>
+                <statFactors>
+                    <Fertility>3</Fertility>
+                </statFactors>
+            </GeneDef>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+            <GeneDef ParentName="FertilityBase">
+            <defName>SuperFertile</defName>
+                <label>super fertile</label>
+                <description>Carriers of this gene have an extremely high chance of becoming pregnant or impregnating others.</description>
+                <iconPath>UI/Icons/Genes/Gene_Fertile</iconPath>
+                <displayOrderInCategory>130</displayOrderInCategory>
+                <statFactors>
+                    <Fertility>4</Fertility>
+                </statFactors>
+            </GeneDef>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+            <GeneDef ParentName="FertilityBase">
+            <defName>HyperFertile</defName>
+                <label>hyper fertile</label>
+                <description>Carriers of this gene may become pregnant or impregnate others just by being in the same room. Probably won't, but it's a valid a concern.</description>
+                <iconPath>UI/Icons/Genes/Gene_Fertile</iconPath>
+                <displayOrderInCategory>140</displayOrderInCategory>
+                <statFactors>
+                    <Fertility>5</Fertility>
+                </statFactors>
+            </GeneDef>
+        </value>
+    </Operation>
+</Patch>
